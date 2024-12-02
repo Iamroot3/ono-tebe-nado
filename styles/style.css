@@ -31,6 +31,7 @@ main {
 
 .header__links-list-item_no-bullit {
     list-style: none;
+    text-decoration: none;
 }
 
 .link-active {
@@ -51,6 +52,7 @@ main {
     width: 140px;
     align-self: center;
     justify-self: center;
+    margin-left: -130px;
 }
 
 .header__logo-image {
@@ -59,12 +61,15 @@ main {
 
 .contact-details {
     font-style: inherit;
+    width: 210px;
+    margin-left: 20px;
 }
 
 .contact-details__item {
     display: block;
     font-size: 18px;
     line-height: 1.3;
+    text-decoration-line: underline;
 }
 
 .contact-details__address {
@@ -108,16 +113,24 @@ main {
 
 .aligned-text {
     display: block;
-}
-
+  }
+  
 .aligned-text_center {
     line-height: 1;
     text-align: center;
 }
-
-.aligned-text_right {
+  
+  .aligned-text_right {
     line-height: 1;
     text-align: right;
+}
+  
+.letter-spacing-extended {
+    letter-spacing: 60px;
+}
+
+.remove-spacing {
+    letter-spacing: normal;
 }
 
 .cover__description {
@@ -127,32 +140,37 @@ main {
     justify-content: flex-end;
     align-items: center;
     gap: 78px;
-    padding: 136px 0 0;
-}
+    padding: 135px 0 0;
+  }
 
-.cover__description-text {
+  .cover__description-text {
     color: #FFF;
-    text-transform: uppercase;
     font-size: 22px;
+    line-height: 1.27;
+    text-transform: uppercase;
     word-spacing: 18px;
-    line-height: 1.2;
-}
+  }
 
 .cover__button {
-    background-color: transparent;
     border: 1px #FFF solid;
-    padding: 10px 30px;
+    padding: 14px 32px;
     color: #FFF;
-    text-transform: uppercase;
     font-family: 'Raleway', sans-serif;
     font-weight: normal;
     font-size: 22px;
     line-height: 1;
+    text-transform: uppercase;
+    background-color: transparent;
     cursor: pointer;
 }
 
+.cover__button:hover {
+    color: #000000;
+    background-color: #FFF;
+  }
+
 .lots {
-    padding: 0 50px;
+    padding: 35px 22px;
 }
 
 .lots__heading {
@@ -185,58 +203,60 @@ main {
     flex-direction: column;
     justify-content: space-between;
     gap: 30px;
-    width:auto;
-    height :100%;
-    padding :50px 40px;
-    background-repeat :no-repeat;
-    background-size :cover;
+    width: auto;
+    height: 100%;
+    padding: 50px 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .card_type_film {
-    background-image :url(../images/card-lot-01.jpg);
+    background-image: url(../images/card-lot-01.jpg);
 }
 
 .card_type_book {
-    background-image :url(../images/card-lot-02.jpg);
+    background-image: url(../images/card-lot-02.jpg);
 }
 
 .card_type_picture {
-    background-image :url(../images/card-lot-03.jpg);
+    background-image: url(../images/card-lot-03.jpg);
 }
 
 .card__title {
-    position :relative;
-    z-index :1;
-    color :#FFF;
-    font-weight :bold;
-    font-size :22px;
-    line-height :1.2;
-    text-decoration-line :underline;
-    text-transform :uppercase;
+    position: relative;
+    z-index: 1;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 1.2;
+    text-decoration-line: underline;
+    text-transform: uppercase;
 }
 
 .card__text {
-    position :relative;
-    z-index :1;
-    color :#FFF;
-    font-size :20px;
-    line-height :1.2;
+    position: relative;
+    z-index: 2;
+    color: #FFF;
+    font-size: 20px;
+    line-height: 1.2;
+    text-decoration-line: none;
+    margin-top: -35px;
 }
 
 .lots__look-more-link {
-    display:block;
-    margin :30px 0 0 40px;
-    font-size :20px;
-    text-decoration-line :underline;
-    text-underline-position :under;
-    width :fit-content;
+    display: block;
+    margin: 30px 0 0 40px;
+    font-size: 20px;
+    text-decoration-line: underline;
+    text-underline-position: under;
+    width: fit-content;
 }
 
 .about {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 24px;
-    padding: 0 50px;
+    column-gap: 28px;
+    padding: 0 25px;
 }
 
 .about__column {
@@ -262,7 +282,7 @@ main {
 }
 
 .about__title {
-    padding: 100px 0 104px;
+    padding: 105px 0 104px;
     font-weight: bold;
     font-size: 40px;
     line-height: 1;
@@ -272,7 +292,7 @@ main {
 .about__text {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 21px;
 }
 
 .about__text p {
@@ -283,7 +303,13 @@ main {
 .footer {
     display: flex;
     justify-content: space-between;
-    padding: 180px 50px 80px;
+    padding: 180px 30px 0px;
+}
+
+.footer__link-list{
+    padding-left: 25px;
+    text-align: center;
+    list-style: none;
 }
 
 .footer__services-icon {
@@ -291,19 +317,16 @@ main {
     height: 48px;
 }
 
-.footer__services-list {
-    text-align: center;
-    list-style: none;
-}
-
-.footer__services-link {
+.footer__link-item {
     font-size: 18px;
     line-height: normal;
     text-underline-position: under;
 }
 
 .footer__services {
+    padding-right: 20px;
     display: flex;
+    justify-content: space-between;
     gap: 48px;
     list-style: none;
 }
