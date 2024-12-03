@@ -185,16 +185,18 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 25px;
+    row-gap: 25px;
     list-style: none;
 }
 
-.lots__card-item {
+.lots__card-list-item {
     height: 100%;
 }
 
 .card-link {
     display: block;
     height: 100%;
+    text-decoration: none;
 }
 
 .card {
@@ -239,7 +241,6 @@ main {
     color: #FFF;
     font-size: 20px;
     line-height: 1.2;
-    text-decoration-line: none;
     margin-top: -35px;
 }
 
