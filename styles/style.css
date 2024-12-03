@@ -303,7 +303,7 @@ main {
 .footer {
     display: flex;
     justify-content: space-between;
-    padding: 180px 30px 0px;
+    padding: 180px 30px 88px;
 }
 
 .footer__link-list {
